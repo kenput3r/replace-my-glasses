@@ -193,5 +193,16 @@
     <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
     <li id="a11y-selection-message">{{ 'general.accessibility.selection_help' | t }}</li>
   </ul>
+  {% if template.suffix == 'build' %}
+
+    {% comment %}
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    {% endcomment %}
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="{{ 'page_build.bundle.js' | asset_url }}"></script>
+  {% endif %}
 </body>
 </html>

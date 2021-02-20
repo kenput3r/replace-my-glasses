@@ -1,0 +1,33 @@
+{
+  "name": "replace-my-glasses",
+  "version": "1.0.0",
+  "description": "Customized version of Shopify's Debut theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "BABEL_ENV=development webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenput3r/replace-my-glasses.git"
+  },
+  "keywords": [
+    "shopify",
+    "react"
+  ],
+  "author": "@kenput3r",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenput3r/replace-my-glasses/issues"
+  },
+  "homepage": "https://github.com/kenput3r/replace-my-glasses#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.17",
+    "@babel/core": "^7.12.17",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react-app": "^10.0.0",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
