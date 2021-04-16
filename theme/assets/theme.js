@@ -1,3 +1,4 @@
+/* eslint-disable */
 window.theme = window.theme || {};
 
 /* ================ SLATE ================ */
@@ -5827,6 +5828,7 @@ window.theme = window.theme || {};
   })();
 
   window.theme.SearchHeader = (function() {
+    
     var selectors = {
       searchInput: '[data-predictive-search-drawer-input]',
       searchResults: '[data-predictive-search-mount="drawer"]',

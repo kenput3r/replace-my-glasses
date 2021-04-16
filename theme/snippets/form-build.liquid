@@ -1,0 +1,344 @@
+<div 
+  id="BuildForm" 
+  data-hello-message="Hello from React!"
+  data-chevron="{{ 'chevron-down.png' | asset_url }}"
+  data-loader="{{'loading-glasses.svg' | asset_url}}"></div>
+
+<style>
+  #BuildForm form {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .step {
+    margin-bottom: 2rem;
+  }
+  #BuildForm h3 {
+    color: var(--color-blue-3);
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  #BuildForm h3 img {
+    max-height: 15px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+  }
+  .product-option {
+    border: 3px solid var(--color-blue-1);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    padding: 5px;
+    position: relative;
+  }
+  .product-option.with-variants {
+    flex-wrap: wrap;
+  }
+  .product-option > div {
+    padding: 0 10px;
+  }
+  .product-option img {
+    align-self: center;
+  }
+  .product-option h4, .product-option h6 {
+    color: var(--color-blue-1);
+    margin-bottom: 0;
+  }
+  .product-option input[type="radio"] {
+    height: calc(100% - 10px);
+    opacity: 0;
+    position: absolute;
+    width: calc(100% - 10px);
+    z-index: 2;
+  }
+  .product-option input[type="radio"]:hover {
+    cursor: pointer;
+  }
+  .product-option input[type="radio"]:checked ~ .checkmark:after {
+    display: block;
+  }
+  .checkmark {
+    background-color: var(--color-blue-5);
+    border: 1px solid var(--color-blue-1);
+    border-radius: 3px;
+    height: 25px;
+    position: relative;
+    width: 25px;
+    align-self: center;
+    margin-left: auto;
+    padding-left: 0;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 2px;
+    width: 8px;
+    height: 16px;
+    border: solid var(--color-blue-1);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  ul.variants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+  ul.variants li {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    position: relative;
+    width: 50%;
+  }
+  ul.variants li div {
+    padding-left: 5px;
+  }
+  ul.variants li p {
+    line-height: 0.5;
+  }
+  img.product-image {
+    max-height: 50px;
+  }
+  img.variant-image {
+    max-height: 30px;
+  }
+  .prescription-form .group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+  }
+  .prescription-form .group div {
+    flex: 1;
+  }
+  .prescription-form .h4 {
+    color: var(--color-blue-1);
+    text-transform: uppercase;
+  }
+  .prescription-form label {
+    color: var(--color-blue-1);
+    flex: auto;
+    font-size: 1.2rem;
+    padding-right: 5px;
+  }
+  .prescription-form label span {
+    display: inline-block;
+    width: 15%;
+  }
+  .prescription-form select {
+    border: 2px solid var(--color-blue-1);
+    border-radius: 4px;
+    width: 80%;
+  }
+  select#LeftPD, select#RightPD {
+    width: 90%;
+  }
+  .file-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.45rem;
+  }
+  .file-group label.h4 {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+  .prescription-form input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .prescription-form .file-input-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+  }
+  .file-input-wrapper:hover, .file-input-wrapper > *:hover {
+    cursor: pointer;
+  }
+  .prescription-form .btn {
+    background-color: var(--color-blue-5);
+    border: 2px solid var(--color-blue-1);
+    border-radius: 20px;
+    color: var(--color-blue-1);
+  }
+  button.toggle-review {
+    border: 3px solid var(--color-blue-1);
+    display: block;
+    margin: 1.45rem auto;
+    padding: 5px;
+    position: relative;
+  }
+  button.toggle-review span {
+    display: block;
+    background-color: var(--color-brown);
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 10px 7px;
+  }
+  #Review {
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .review-option {
+    margin-bottom: 1.45rem;
+  }
+  .review-option .h4 {
+    margin-bottom: 0;
+  }
+  .review-option .values {
+    display: flex;
+    flex-direction: row;
+  }
+  .review-option .values span {
+    flex: 1
+  }
+  .review-option .values span:nth-of-type(2) {
+    text-align: right;
+  }
+  .review-option.subtotal {
+    border-top: 2px solid var(--color-blue-1);
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .buttons button {
+    border: 2px solid var(--color-blue-1);
+    display: block;
+    margin: 1.45rem auto;
+    padding: 2.5px;
+    position: relative;
+  }
+  .buttons button span {
+    display: block;
+    background-color: var(--color-brown);
+    color: #ffffff;
+    padding: 5px 3.5px;
+    text-transform: uppercase;
+  }
+
+  /* Skeleton stuff */
+  @keyframes loading {
+    0% {
+      left: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      left: 100%;
+      transform: translateX(0%);
+    }
+  }
+  .skeleton {
+    --avatar-size: 50px;
+    --avatar-skeleton: radial-gradient(circle calc(var(--avatar-size) / 2), #ddd 99%, transparent 0);
+    --avatar-position: 0 0;
+    --title-height: 20px;
+    --title-width: 200px;
+    --title-skeleton: linear-gradient(#ddd var(--title-height), transparent 0);
+  }
+  .skeleton .product-image {
+    background-repeat: no-repeat;
+    background-image: var(--avatar-skeleton);
+    background-size: var(--avatar-size) var(--avatar-size);
+    background-position: var(--avatar-position);
+    height: 50px;
+    width: 50px;
+  }
+  .skeleton .product-description {
+    width: calc(100% - 50px);
+  }
+  .skeleton .h4 {
+    background-image: var(--title-skeleton);
+    background-size: var(--title-width) var(--title-height);
+    margin-bottom: 5px;
+    width: 50%;
+    height: 20px;
+  }
+  .skeleton .h4::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    height: calc(100% - 6px);
+    width: 10%;
+    background: rgba(255, 255, 255, 0.4);
+    animation: loading 1s infinite linear;
+  }
+  .skeleton p {
+    background-image: linear-gradient(#ddd 20px, transparent 0);
+    background-size: 200px 12px;
+    width: 70%;
+    height: 12px;
+  }
+
+  @media (max-width: 768px) {
+    .product-option.with-variants img.product-image {
+      flex: 1;
+    }
+    .product-option.with-variants .product-description {
+      flex: 9;
+    }
+    ul.variants {
+      width: 99%;
+    }
+    label[for="PrescriptionPhoto"] {
+      flex: 2;
+    }
+    .file-input-wrapper {
+      flex: 1;
+    }
+  }
+  @media (max-width: 500px) {
+    .page-width {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+    ul.variants {
+      margin-top: 10px;
+      width: 80%;
+    }
+    ul.variants li {
+      width: 100%;
+    }
+    label[for="RightPD"] span, label[for="LeftPD"] span {
+      display: block;
+    }
+    label[for="PrescriptionPhoto"] {
+      flex: 1.5;
+    }
+    .prescription-form label span {
+      width: 30%;
+    }
+    .prescription-form select {
+      width: 70%;
+    }
+  }
+  @media (max-width: 375px) {
+    label[for="PrescriptionPhoto"] {
+      flex: 1;
+    }
+  }
+  @media (max-width: 320px) {
+    .buttons button span {
+      padding: 2px;
+    }
+    .buttons button span {
+      padding: 2px;
+    }
+  }
+
+</style>

@@ -75,6 +75,7 @@
   </script>
 
   <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
+  <link rel="stylesheet" href="https://use.typekit.net/tic8mcj.css">
 
   <style>
     {{ header_font | font_face: font_display: 'swap' }}
@@ -165,7 +166,7 @@
   {{ content_for_header }}
 </head>
 
-<body class="template-{{ request.page_type | handle }}">
+<body class="template-{{ request.page_type | handle }} {{ template.name }}-{{ template.suffix }}">
 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
@@ -202,7 +203,7 @@
 
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="{{ 'page_build.bundle.js' | asset_url }}"></script>
+    <script src="{{ 'PageBuild.js' | asset_url }}"></script>
   {% endif %}
 </body>
 </html>

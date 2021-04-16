@@ -87,43 +87,57 @@ function _defineProperty(obj, key, value) {
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!***************************!*\
-  !*** ./src/page-build.js ***!
-  \***************************/
+/*!********************************!*\
+  !*** ./src/ProductSkeleton.js ***!
+  \********************************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ProductSkeleton": () => (/* binding */ ProductSkeleton)
+/* harmony export */ });
 /* harmony import */ var _Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
+var _jsxFileName = "/Users/kenlyerly/Apps/replace-my-glasses/src/ProductSkeleton.js";
+function ProductSkeleton(variants) {
+  var _React$createElement, _React$createElement2, _React$createElement3, _React$createElement4, _React$createElement5;
 
-
-
-var _jsxFileName = "/Users/kenlyerly/Apps/replace-my-glasses/src/page-build.js",
-    _React$createElement2;
-
-function PageBuild(_ref) {
-  var _React$createElement;
-
-  var props = _ref.props;
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("p", (_React$createElement = {
+  return /*#__PURE__*/React.createElement("div", (_React$createElement5 = {
+    className: "product-option skeleton",
+    __self: this
+  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement5, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement5, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 3,
+    columnNumber: 5
+  }), _React$createElement5), /*#__PURE__*/React.createElement("div", (_React$createElement = {
+    className: "product-image",
     __self: this
   }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement, "__source", {
     fileName: _jsxFileName,
-    lineNumber: 6,
+    lineNumber: 4,
     columnNumber: 7
-  }), _React$createElement), data.helloMessage));
+  }), _React$createElement)), /*#__PURE__*/React.createElement("div", (_React$createElement4 = {
+    className: "product-description",
+    __self: this
+  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement4, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement4, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 5,
+    columnNumber: 7
+  }), _React$createElement4), /*#__PURE__*/React.createElement("div", (_React$createElement2 = {
+    className: "h4",
+    __self: this
+  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 9
+  }), _React$createElement2)), /*#__PURE__*/React.createElement("p", (_React$createElement3 = {
+    __self: this
+  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement3, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement3, "__source", {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 9
+  }), _React$createElement3))));
 }
-
-var domContainer = document.querySelector("#BuildForm");
-var data = domContainer.dataset;
-ReactDOM.render( /*#__PURE__*/React.createElement(PageBuild, (_React$createElement2 = {
-  data: data,
-  __self: undefined
-}, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__self", undefined), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__source", {
-  fileName: _jsxFileName,
-  lineNumber: 13,
-  columnNumber: 17
-}), _React$createElement2)), domContainer);
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=page_build.bundle.js.map
+//# sourceMappingURL=ProductSkeleton.js.map

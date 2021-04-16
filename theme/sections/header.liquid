@@ -62,7 +62,7 @@
         {%- assign logo_classes = 'medium-up--one-quarter logo-align--left' -%}
       {% endif %}
 
-      <div class="grid__item {{ logo_classes }}">
+      <div id="LogoContainer" class="grid__item {{ logo_classes }}">
         {% comment %}
           Use the uploaded logo from theme settings if enabled.
           Site name gets precedence with H1 tag on homepage, div on other pages.
@@ -111,7 +111,7 @@
       <div class="grid__item {% if section.settings.align_logo == 'left' %}medium-up--one-quarter{% else %}medium-up--one-third medium-up--push-one-third{% endif %} text-right site-header__icons{% if shop.customer_accounts_enabled %} site-header__icons--plus{% endif %}">
         <div class="site-header__icons-wrapper">
 
-          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
+          <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer {% unless section.settings.showSearchButton %} data-no-search="true"{% endunless %}>
             {% include 'icon-search' %}
             <span class="icon__fallback-text">{{ 'layout.navigation.search' | t }}</span>
           </button>
@@ -130,6 +130,7 @@
             {% endif %}
           {% endif %}
 
+          {% if section.settings.showCartButton %}
           <a href="{{ routes.cart_url }}" class="site-header__icon site-header__cart">
             {% include 'icon-cart' %}
             <span class="icon__fallback-text">{{ 'layout.cart.title' | t }}</span>
@@ -138,6 +139,7 @@
               <span class="icon__fallback-text medium-up--hide">{{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
             </div>
           </a>
+          {% endif %}
 
           {% unless linklists[section.settings.main_linklist] == blank %}
             <button type="button" class="btn--link site-header__icon site-header__menu js-mobile-nav-toggle mobile-nav--open" aria-controls="MobileNav"  aria-expanded="false" aria-label="{{ 'layout.navigation.menu' | t }}">
@@ -247,12 +249,83 @@
   </header>
 
   {% if section.settings.align_logo == 'center' %}
-  <nav class="small--hide border-bottom" id="AccessibleNav" role="navigation">
+  <nav class="small--hide" id="AccessibleNav" role="navigation">
     {% include 'site-nav', linklist: section.settings.main_linklist, wrapper_class: 'site-nav--centered' %}
   </nav>
   {% endif %}
 </div>
 
+<style>
+  body.template-index ul#SiteNav {
+    margin-bottom: 0;
+  }
+  div#shopify-section-header, header.site-header, div.site-header__mobile-nav {
+    background-color: var(--color-blue-1);
+  }
+  div#shopify-section-header a {
+    color: var(--color-blue-5);
+  }
+  .site-nav__link--active .site-nav__label {
+    border-bottom-color: var(--color-blue-5);
+  }
+  div#shopify-section-header a.mobile-nav__link {
+    color: var(--color-blue-1);
+    font-weight: bold;
+  }
+  button.site-header__icon, .site-header__search-toggle {
+    color: var(--color-blue-5);
+  }
+  ul#SiteNav {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0;
+    width: 767px;
+    max-width: 90vw;
+  }
+  ul#SiteNav li a {
+    text-transform: uppercase;
+  }
+
+  [data-no-search="true"] {
+    visibility: hidden;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 749px) {
+    body.template-index div#shopify-section-header {
+    padding-bottom: 2rem;
+  }
+    header.site-header {
+      border-bottom: 0;
+    }
+    header.site-header div.grid--table {
+      display: block;
+    }
+    #LogoContainer {
+      display: block;
+    }
+    h1.site-header__logo, .site-header__logo {
+      padding-left: 0;
+      margin-top: 0 !important;
+      padding-top: 15px;
+    }
+    div.site-header__icons {
+      display: block !important;
+      padding-right: 0;
+      width: 100%;
+    }
+    div.site-header__icons-wrapper {
+      justify-content: center;
+    }
+  }
+</style>
 
 
 <script type="application/ld+json">
@@ -489,6 +562,28 @@
         "zh-TW": "選單"
       },
       "default": "main-menu"
+    },
+    {
+      "type": "header",
+      "content": {
+        "en": "Extras"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "showSearchButton",
+      "label": {
+        "en": "Show Search Button"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "showCartButton",
+      "label": {
+        "en": "Show Cart Button"
+      },
+      "default": true
     },
     {
       "type": "header",

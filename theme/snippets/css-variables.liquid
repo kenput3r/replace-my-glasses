@@ -69,11 +69,13 @@
     --font-weight-body--bold: {{ base_font_bold.weight | default: 700 }};
     --font-weight-body--bolder: {{ base_font_bolder.weight | default: 700 }};
 
-    --font-stack-header: {{ header_font.family }}, {{ header_font.fallback_families }};
+    {% comment %} --font-stack-header: {{ header_font.family }}, {{ header_font.fallback_families }}; {% endcomment %}
+    --font-stack-header: semplicitapro, {{ header_font.fallback_families }};
     --font-style-header: {{ header_font.style }};
     --font-weight-header: {{ header_font.weight }};
 
-    --font-stack-body: {{ base_font.family }}, {{ base_font.fallback_families }};
+    {% comment %} --font-stack-body: {{ base_font.family }}, {{ base_font.fallback_families }}; {% endcomment %}
+    --font-stack-body: semplicitapro, {{ base_font.fallback_families }};
     --font-style-body: {{ base_font.style }};
     --font-weight-body: {{ base_font.weight }};
 
@@ -114,5 +116,13 @@
     {% comment %} Image placeholder {% endcomment %}
     --global-color-image-loader-primary: {{ settings.color_text | color_modify: 'alpha', 0.06 }};
     --global-color-image-loader-secondary: {{ settings.color_text | color_modify: 'alpha', 0.12 }};
+
+    {% comment %} custom variables {% endcomment %}
+    --color-blue-1: #1d3342;
+    --color-blue-2: #2f4b6d;
+    --color-blue-3: #617ead;
+    --color-blue-4: #a6c8e0;
+    --color-blue-5: #cbe5f4;
+    --color-brown: #af6822;
   }
 {% endstyle %}

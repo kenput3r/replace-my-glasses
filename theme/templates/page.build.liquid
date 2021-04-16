@@ -1,16 +1,67 @@
+<div class="color-wrap"></div>
+<div class="section-header text-center">
+  <h1>{{ page.title }}</h1>
+</div>
 <div class="page-width">
   <div class="grid">
     <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      <div class="section-header text-center">
-        <h1>{{ page.title }}</h1>
-      </div>
-
       <div class="rte">
         {{ page.content }}
       </div>
 
-      <div id="BuildForm" data-hello-message="Hello from React!"></div>
+      {% render 'form-build' %}
 
     </div>
   </div>
 </div>
+
+<style>
+  ul.site-nav {
+    margin-bottom: 0;
+  }
+  main#MainContent {
+    padding-top: 0;
+  }
+  .color-wrap {
+    background-color: var(--color-blue-1);
+    height: 150px;
+    width: 100%;
+  }
+  .section-header {
+    background-color: var(--color-blue-4);
+    color: var(--color-blue-1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -70px;
+    width: 500px;
+    max-width: 95vw;
+    padding: 30px;
+  }
+  .section-header h1 {
+    background-image: url("{{ 'lines-bg-page-title.png' | asset_url }}");
+    background-size: 100% 100%;
+    font-style: italic;
+    margin-bottom: 0;
+    padding: 15px 13px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 500px) {
+    .color-wrap {
+      height: 80px;
+    }
+    .section-header {
+      margin-top: -50px;
+      margin-bottom: 17px;
+      padding: 20px;
+    }
+    .section-header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 320px) {
+    .section-header h1 {
+      font-size: 1.2rem;
+    }
+  }
+</style>

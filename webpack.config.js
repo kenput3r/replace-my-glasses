@@ -1,13 +1,17 @@
-const path = require("path");
+const path = require("path")
+const Dotenv = require("dotenv-webpack")
 
 module.exports = {
   entry: {
-    page_build: "./src/page-build.js"
+    PageBuild: "./src/PageBuild.js",
+    Product: "./src/Product.js",
+    PrescriptionForm: "./src/PrescriptionForm",
+    ProductSkeleton: "./src/ProductSkeleton.js",
   },
   devtool: "source-map",
   mode: "development",
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "theme/assets"),
   },
   module: {
@@ -24,4 +28,6 @@ module.exports = {
       },
     ],
   },
-};
+  plugins: [new Dotenv()],
+  target: "node",
+}
