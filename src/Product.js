@@ -70,13 +70,16 @@ export function Product({ product, setState, state }) {
               <span>
                 {" "}
                 ($
-                {parseFloat(
-                  product.node.priceRange.minVariantPrice.amount
-                ).toFixed(2)}{" "}
-                - $
-                {parseFloat(
-                  product.node.priceRange.maxVariantPrice.amount
-                ).toFixed(2)}{" "}
+                {product.node.priceRange.minVariantPrice.amount !==
+                product.node.priceRange.maxVariantPrice.amount
+                  ? `${parseFloat(
+                      product.node.priceRange.minVariantPrice.amount
+                    ).toFixed(2)} - $${parseFloat(
+                      product.node.priceRange.maxVariantPrice.amount
+                    ).toFixed(2)}`
+                  : parseFloat(
+                      product.node.priceRange.minVariantPrice.amount
+                    ).toFixed(2)}{" "}
                 USD)
               </span>
             </h4>
@@ -94,7 +97,10 @@ export function Product({ product, setState, state }) {
                 <div className="variant-description">
                   <h6>
                     {variant.node.title}
-                    <small> (${variant.node.priceV2.amount})</small>
+                    <small>
+                      {" "}
+                      (${parseFloat(variant.node.priceV2.amount).toFixed(2)})
+                    </small>
                   </h6>
                   <p>
                     <small>{variant.node.image?.altText}</small>

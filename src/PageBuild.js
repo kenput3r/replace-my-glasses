@@ -201,12 +201,10 @@ function PageBuild({ data }) {
       leftEye.SPH &&
       leftEye.CYL &&
       leftEye.Axis &&
-      leftEye.Add &&
       leftEye.PD &&
       rightEye.SPH &&
       rightEye.CYL &&
       rightEye.Axis &&
-      rightEye.Add &&
       rightEye.PD
     ) {
       return true
