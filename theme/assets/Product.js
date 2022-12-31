@@ -94,9 +94,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Product": () => (/* binding */ Product)
 /* harmony export */ });
-/* harmony import */ var _Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
-var _jsxFileName = "/Users/kenlyerly/Apps/replace-my-glasses/src/Product.js";
+var _jsxFileName = "/Users/kenputer/Apps/replace-my-glasses/src/Product.js";
 
 /* global React */
 function Product(_ref) {
@@ -149,7 +149,7 @@ function Product(_ref) {
   return /*#__PURE__*/React.createElement(React.Fragment, null, product.node.variants.edges.length === 1 ? /*#__PURE__*/React.createElement("div", (_React$createElement8 = {
     className: "product-option",
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement8, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement8, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement8, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement8, "__source", {
     fileName: _jsxFileName,
     lineNumber: 24,
     columnNumber: 9
@@ -158,32 +158,32 @@ function Product(_ref) {
     src: (_product$node$images$ = product.node.images.edges[0]) === null || _product$node$images$ === void 0 ? void 0 : _product$node$images$.node.transformedSrc,
     alt: (_product$node$images$2 = product.node.images.edges[0]) === null || _product$node$images$2 === void 0 ? void 0 : _product$node$images$2.node.altText,
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement, "__source", {
     fileName: _jsxFileName,
     lineNumber: 25,
     columnNumber: 11
   }), _React$createElement)), /*#__PURE__*/React.createElement("div", (_React$createElement5 = {
     className: "product-description",
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement5, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement5, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement5, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement5, "__source", {
     fileName: _jsxFileName,
     lineNumber: 30,
     columnNumber: 11
   }), _React$createElement5), /*#__PURE__*/React.createElement("h4", (_React$createElement3 = {
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement3, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement3, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement3, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement3, "__source", {
     fileName: _jsxFileName,
     lineNumber: 31,
     columnNumber: 13
   }), _React$createElement3), product.node.title, /*#__PURE__*/React.createElement("span", (_React$createElement2 = {
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement2, "__source", {
     fileName: _jsxFileName,
     lineNumber: 33,
     columnNumber: 15
   }), _React$createElement2), " ", "($", parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2), " ", "USD)")), /*#__PURE__*/React.createElement("p", (_React$createElement4 = {
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement4, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement4, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement4, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement4, "__source", {
     fileName: _jsxFileName,
     lineNumber: 42,
     columnNumber: 13
@@ -199,21 +199,21 @@ function Product(_ref) {
     onClick: handleClick,
     onChange: handleChange,
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement6, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement6, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement6, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement6, "__source", {
     fileName: _jsxFileName,
     lineNumber: 44,
     columnNumber: 11
   }), _React$createElement6)), /*#__PURE__*/React.createElement("div", (_React$createElement7 = {
     className: "checkmark",
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement7, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement7, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement7, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement7, "__source", {
     fileName: _jsxFileName,
     lineNumber: 58,
     columnNumber: 11
   }), _React$createElement7))) : /*#__PURE__*/React.createElement("div", (_React$createElement24 = {
     className: "product-option with-variants",
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement24, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement24, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement24, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement24, "__source", {
     fileName: _jsxFileName,
     lineNumber: 61,
     columnNumber: 9
@@ -222,39 +222,39 @@ function Product(_ref) {
     src: (_product$node$images$3 = product.node.images.edges[0]) === null || _product$node$images$3 === void 0 ? void 0 : _product$node$images$3.node.transformedSrc,
     alt: (_product$node$images$4 = product.node.images.edges[0]) === null || _product$node$images$4 === void 0 ? void 0 : _product$node$images$4.node.altText,
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement9, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement9, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement9, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement9, "__source", {
     fileName: _jsxFileName,
     lineNumber: 62,
     columnNumber: 11
   }), _React$createElement9)), /*#__PURE__*/React.createElement("div", (_React$createElement13 = {
     className: "product-description",
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement13, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement13, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement13, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement13, "__source", {
     fileName: _jsxFileName,
     lineNumber: 67,
     columnNumber: 11
   }), _React$createElement13), /*#__PURE__*/React.createElement("h4", (_React$createElement11 = {
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement11, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement11, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement11, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement11, "__source", {
     fileName: _jsxFileName,
     lineNumber: 68,
     columnNumber: 13
   }), _React$createElement11), product.node.title, /*#__PURE__*/React.createElement("span", (_React$createElement10 = {
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement10, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement10, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement10, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement10, "__source", {
     fileName: _jsxFileName,
     lineNumber: 70,
     columnNumber: 15
   }), _React$createElement10), " ", "($", product.node.priceRange.minVariantPrice.amount !== product.node.priceRange.maxVariantPrice.amount ? "".concat(parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2), " - $").concat(parseFloat(product.node.priceRange.maxVariantPrice.amount).toFixed(2)) : parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2), " ", "USD)")), /*#__PURE__*/React.createElement("p", (_React$createElement12 = {
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement12, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement12, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement12, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement12, "__source", {
     fileName: _jsxFileName,
     lineNumber: 86,
     columnNumber: 13
   }), _React$createElement12), product.node.description)), /*#__PURE__*/React.createElement("ul", (_React$createElement23 = {
     className: "variants",
     __self: this
-  }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement23, "__self", this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement23, "__source", {
+  }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement23, "__self", this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement23, "__source", {
     fileName: _jsxFileName,
     lineNumber: 88,
     columnNumber: 11
@@ -264,7 +264,7 @@ function Product(_ref) {
     return /*#__PURE__*/React.createElement("li", (_React$createElement22 = {
       key: variant.node.id,
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement22, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement22, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement22, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement22, "__source", {
       fileName: _jsxFileName,
       lineNumber: 90,
       columnNumber: 15
@@ -273,38 +273,38 @@ function Product(_ref) {
       src: (_variant$node$image = variant.node.image) === null || _variant$node$image === void 0 ? void 0 : _variant$node$image.transformedSrc,
       alt: (_variant$node$image2 = variant.node.image) === null || _variant$node$image2 === void 0 ? void 0 : _variant$node$image2.altText,
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement14, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement14, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement14, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement14, "__source", {
       fileName: _jsxFileName,
       lineNumber: 92,
       columnNumber: 17
     }), _React$createElement14)), /*#__PURE__*/React.createElement("div", (_React$createElement19 = {
       className: "variant-description",
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement19, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement19, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement19, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement19, "__source", {
       fileName: _jsxFileName,
       lineNumber: 97,
       columnNumber: 17
     }), _React$createElement19), /*#__PURE__*/React.createElement("h6", (_React$createElement16 = {
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement16, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement16, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement16, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement16, "__source", {
       fileName: _jsxFileName,
       lineNumber: 98,
       columnNumber: 19
     }), _React$createElement16), variant.node.title, /*#__PURE__*/React.createElement("small", (_React$createElement15 = {
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement15, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement15, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement15, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement15, "__source", {
       fileName: _jsxFileName,
       lineNumber: 100,
       columnNumber: 21
     }), _React$createElement15), " ", "($", parseFloat(variant.node.priceV2.amount).toFixed(2), ")")), /*#__PURE__*/React.createElement("p", (_React$createElement18 = {
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement18, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement18, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement18, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement18, "__source", {
       fileName: _jsxFileName,
       lineNumber: 105,
       columnNumber: 19
     }), _React$createElement18), /*#__PURE__*/React.createElement("small", (_React$createElement17 = {
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement17, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement17, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement17, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement17, "__source", {
       fileName: _jsxFileName,
       lineNumber: 106,
       columnNumber: 21
@@ -320,14 +320,14 @@ function Product(_ref) {
       "data-price": variant.node.priceV2.amount,
       onChange: handleChange,
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement20, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement20, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement20, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement20, "__source", {
       fileName: _jsxFileName,
       lineNumber: 109,
       columnNumber: 17
     }), _React$createElement20)), /*#__PURE__*/React.createElement("div", (_React$createElement21 = {
       className: "checkmark",
       __self: _this
-    }, (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement21, "__self", _this), (0,_Users_kenlyerly_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement21, "__source", {
+    }, (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement21, "__self", _this), (0,_Users_kenputer_Apps_replace_my_glasses_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__.default)(_React$createElement21, "__source", {
       fileName: _jsxFileName,
       lineNumber: 121,
       columnNumber: 17

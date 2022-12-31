@@ -6,9 +6,10 @@ import { PrescriptionForm } from "./PrescriptionForm"
 import { ProductSkeleton } from "./ProductSkeleton"
 
 // to do
-// Handle image to large for cloudinary
+// Handle image too large for cloudinary
 
-const endpoint = `https://replace-my-glasses.myshopify.com/api/2021-01/graphql.json`
+const endpoint = `https://replace-my-glasses.myshopify.com/api/2022-10/graphql.json`
+
 const query = `{
   collectionByHandle(handle: "lens-customization") {
     products(first: 50) {
