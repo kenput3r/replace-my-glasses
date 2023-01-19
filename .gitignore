@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+theme/assets/PageBuild.js
+theme/assets/PageBuild.js.map
+theme/assets/PrescriptionForm.js
+theme/assets/PrescriptionForm.js.map
+theme/assets/Product.js
+theme/assets/Product.js.map
+theme/assets/ProductSkeleton.js
+theme/assets/ProductSkeleton.js.map
+theme/assets/skeletonLoader.js
+theme/assets/skeletonLoader.js.map
